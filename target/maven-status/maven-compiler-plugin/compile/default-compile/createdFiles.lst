@@ -1,0 +1,7 @@
+com\nyobyte\pruebatecnica\model\dto\EntidadDTO.class
+com\nyobyte\pruebatecnica\PruebatecnicaRunner.class
+com\nyobyte\pruebatecnica\controller\EntidadController.class
+com\nyobyte\pruebatecnica\model\repositories\EntidadRepository.class
+com\nyobyte\pruebatecnica\model\repositories\TipoContribuyenteRepository.class
+com\nyobyte\pruebatecnica\service\EntidadService.class
+com\nyobyte\pruebatecnica\model\repositories\TipoDocumentoRepository.class
