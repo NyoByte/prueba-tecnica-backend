@@ -1,11 +1,13 @@
 E:\Programas Estudio\DesktopGitHub\Repositorios locales\pruebatecnica\src\main\java\com\nyobyte\pruebatecnica\controller\EntidadController.java
+E:\Programas Estudio\DesktopGitHub\Repositorios locales\pruebatecnica\src\main\java\com\nyobyte\pruebatecnica\controller\ContribuyenteController.java
 E:\Programas Estudio\DesktopGitHub\Repositorios locales\pruebatecnica\src\main\java\com\nyobyte\pruebatecnica\PruebatecnicaApplication.java
-E:\Programas Estudio\DesktopGitHub\Repositorios locales\pruebatecnica\src\main\java\com\nyobyte\pruebatecnica\model\dao\TipoDocumentoEntity.java
-E:\Programas Estudio\DesktopGitHub\Repositorios locales\pruebatecnica\src\main\java\com\nyobyte\pruebatecnica\model\repositories\TipoContribuyenteRepository.java
 E:\Programas Estudio\DesktopGitHub\Repositorios locales\pruebatecnica\src\main\java\com\nyobyte\pruebatecnica\model\dto\EntidadDTO.java
 E:\Programas Estudio\DesktopGitHub\Repositorios locales\pruebatecnica\src\main\java\com\nyobyte\pruebatecnica\model\repositories\TipoDocumentoRepository.java
-E:\Programas Estudio\DesktopGitHub\Repositorios locales\pruebatecnica\src\main\java\com\nyobyte\pruebatecnica\model\repositories\EntidadRepository.java
 E:\Programas Estudio\DesktopGitHub\Repositorios locales\pruebatecnica\src\main\java\com\nyobyte\pruebatecnica\PruebatecnicaRunner.java
 E:\Programas Estudio\DesktopGitHub\Repositorios locales\pruebatecnica\src\main\java\com\nyobyte\pruebatecnica\model\dao\EntidadEntity.java
-E:\Programas Estudio\DesktopGitHub\Repositorios locales\pruebatecnica\src\main\java\com\nyobyte\pruebatecnica\model\dao\TipoContribuyenteEntity.java
 E:\Programas Estudio\DesktopGitHub\Repositorios locales\pruebatecnica\src\main\java\com\nyobyte\pruebatecnica\service\EntidadService.java
+E:\Programas Estudio\DesktopGitHub\Repositorios locales\pruebatecnica\src\main\java\com\nyobyte\pruebatecnica\model\dao\TipoDocumentoEntity.java
+E:\Programas Estudio\DesktopGitHub\Repositorios locales\pruebatecnica\src\main\java\com\nyobyte\pruebatecnica\model\repositories\TipoContribuyenteRepository.java
+E:\Programas Estudio\DesktopGitHub\Repositorios locales\pruebatecnica\src\main\java\com\nyobyte\pruebatecnica\model\repositories\EntidadRepository.java
+E:\Programas Estudio\DesktopGitHub\Repositorios locales\pruebatecnica\src\main\java\com\nyobyte\pruebatecnica\model\dao\TipoContribuyenteEntity.java
+E:\Programas Estudio\DesktopGitHub\Repositorios locales\pruebatecnica\src\main\java\com\nyobyte\pruebatecnica\controller\DocumentoController.java

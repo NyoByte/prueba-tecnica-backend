@@ -7,16 +7,18 @@ public class EntidadDTO {
     private String nombre_comercial;
     private String direccion;
     private String telefono;
+    private Boolean estado;
     private Long tipoDocumento_id;
     private Long tipoContribuyente_id;
 
-    public EntidadDTO(Long id, String nro_documento, String razon_social, String nombre_comercial, String direccion, String telefono, Long tipoDocumento_id, Long tipoContribuyente_id) {
+    public EntidadDTO(Long id, String nro_documento, String razon_social, String nombre_comercial, String direccion, String telefono, Boolean estado, Long tipoDocumento_id, Long tipoContribuyente_id) {
         this.id = id;
         this.nro_documento = nro_documento;
         this.razon_social = razon_social;
         this.nombre_comercial = nombre_comercial;
         this.direccion = direccion;
         this.telefono = telefono;
+        this.estado = estado;
         this.tipoDocumento_id = tipoDocumento_id;
         this.tipoContribuyente_id = tipoContribuyente_id;
     }
@@ -67,6 +69,14 @@ public class EntidadDTO {
 
     public void setTelefono(String telefono) {
         this.telefono = telefono;
+    }
+
+    public Boolean getEstado() {
+        return estado;
+    }
+
+    public void setEstado(Boolean estado) {
+        this.estado = estado;
     }
 
     public Long getTipoDocumento_id() {

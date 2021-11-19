@@ -47,11 +47,23 @@ public class EntidadService {
     }
 
     public List<TipoDocumentoEntity> findAllTipoDocumento(){
-        return tipoDocRep.findAll();
+        return tipoDocRep.findAllTipoDocumento();
     }
 
     public TipoDocumentoEntity findTipoDocumentoById(Long id){
         return tipoDocRep.findById(id).orElse(null);
+    }
+
+    public TipoDocumentoEntity addTipoDocumento(TipoDocumentoEntity documento) {
+        return tipoDocRep.save(documento);
+    }
+
+    public TipoDocumentoEntity updateTipoDocumento(TipoDocumentoEntity documento) {
+        return tipoDocRep.save(documento);
+    }
+
+    public void deleteTipoDocumento(Long id){
+        tipoDocRep.deleteById(id);
     }
 
     public List<TipoContribuyenteEntity> findAllTipoContribuyente(){
@@ -60,5 +72,17 @@ public class EntidadService {
 
     public TipoContribuyenteEntity findTipoContribuyenteById(Long id){
         return tipoContribRep.findById(id).orElse(null);
+    }
+
+    public TipoContribuyenteEntity addTipoContribuyente(TipoContribuyenteEntity contribuyente) {
+        return tipoContribRep.save(contribuyente);
+    }
+
+    public TipoContribuyenteEntity updateTipoContribuyente(TipoContribuyenteEntity contribuyente) {
+        return tipoContribRep.save(contribuyente);
+    }
+
+    public void deleteTipoContribuyente(Long id){
+        tipoContribRep.deleteById(id);
     }
 }

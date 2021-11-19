@@ -20,16 +20,11 @@ public class EntidadController {
     public EntidadController(EntidadService entidadService) {
         this.entidadService = entidadService;
     }
-    /*
+
     @GetMapping("/all")
     public ResponseEntity<List<EntidadEntity>> getAllEntidad(){
         List<EntidadEntity> entidades = entidadService.findAllEntidad();
         return new ResponseEntity<>(entidades, HttpStatus.OK);
-    }
-    */
-    @GetMapping("/all")
-    public List<EntidadEntity> getAllEntidad(){
-        return entidadService.findAllEntidad();
     }
 
     @GetMapping("/find/{id}")
@@ -79,6 +74,7 @@ public class EntidadController {
         entidadCurrent.setNombre_comercial(entidadDTO.getNombre_comercial());
         entidadCurrent.setDireccion(entidadDTO.getDireccion());
         entidadCurrent.setTelefono(entidadDTO.getTelefono());
+        entidadCurrent.setEstado(entidadDTO.getEstado());
 
         Long tipoContribuyente_id = entidadDTO.getTipoContribuyente_id();
         if (tipoContribuyente_id == null){
@@ -98,27 +94,5 @@ public class EntidadController {
     public ResponseEntity<?> deleteEntidad(@PathVariable("id") Long id){
         entidadService.deleteEntidad(id);
         return new ResponseEntity<>(HttpStatus.OK);
-    }
-
-    @GetMapping("/documento/all")
-    public List<TipoDocumentoEntity> getAllTipoDocumento(){
-        return entidadService.findAllTipoDocumento();
-    }
-
-    @GetMapping("/documento/find/{id}")
-    public ResponseEntity<TipoDocumentoEntity> getTipoDocumentoById(@PathVariable("id") Long id){
-        TipoDocumentoEntity documento = entidadService.findTipoDocumentoById(id);
-        return new ResponseEntity<>(documento, HttpStatus.OK);
-    }
-
-    @GetMapping("/contribuyente/all")
-    public List<TipoContribuyenteEntity> getAllTipoContribuyente(){
-        return entidadService.findAllTipoContribuyente();
-    }
-
-    @GetMapping("/contribuyente/find/{id}")
-    public ResponseEntity<TipoContribuyenteEntity> getTipoContribuyenteById(@PathVariable("id") Long id){
-        TipoContribuyenteEntity contribuyente = entidadService.findTipoContribuyenteById(id);
-        return new ResponseEntity<>(contribuyente, HttpStatus.OK);
     }
 }
